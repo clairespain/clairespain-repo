@@ -1,6 +1,4 @@
 <h1>Repo for clairespain.com</h1>
-<hr/>
-
 
 🎨 clairespain.com
     My little corner of the internet.
