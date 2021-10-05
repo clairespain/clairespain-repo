@@ -14,3 +14,27 @@
 
     // background-color: whitesmoke;
 }
+
+nav {
+    overflow: hidden;
+    width: 100%;
+    font-family: var(--font-proxima);
+    font-size: rem(16);
+    font-weight: 400;
+    color: var(--goldenyellow);
+
+    a {
+        color: var(--goldenyellow);
+        text-decoration: none;
+        margin-left: rem(50);
+        transition: padding-bottom 1s;
+        &:hover {
+            border-bottom: rem(2) solid var(--goldenyellow);
+            padding-bottom: rem(21);
+        }
+        &:active {
+            border-bottom: rem(2) solid var(--goldenyellow);
+            padding-bottom: rem(21);
+        }
+    }
+}
