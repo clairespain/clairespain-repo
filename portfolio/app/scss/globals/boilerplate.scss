@@ -1,3 +1,5 @@
+@use "../util" as *;
+
 html {
     font-size: 100%;
     box-sizing: border-box;
@@ -12,4 +14,27 @@ html {
 body {
     margin: 0;
     padding: 0;
+    // background-color: var(--goldenyellow);
+}
+
+h1 {
+    font-family: var(--font-antique);
+    font-weight: 500;
+    color: var(--smokeybrown);
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--font-proxima);
+    font-weight: 700;
+    color: var(--smokeybrown);
+    font-size: rem(56);
+    text-align: center;
+}
+
+h3 {
+    font-family: var(--font-proxima);
+    font-weight: 700;
+    font-size: rem(37);
+    color: var(--dawnyellow);
 }
