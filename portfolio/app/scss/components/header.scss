@@ -2,8 +2,11 @@
 
 .header {
     @include breakpoint(medium) {
+        // margin-top: rem(25);
+        // margin-bottom: rem(47);
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__title {
@@ -23,18 +26,42 @@ nav {
     font-weight: 400;
     color: var(--goldenyellow);
 
+    ul {
+    }
+
+    li {
+        border-bottom: rem(2) solid var(--goldenyellow);
+    }
+
     a {
         color: var(--goldenyellow);
         text-decoration: none;
         margin-left: rem(50);
         transition: padding-bottom 1s;
-        &:hover {
-            border-bottom: rem(2) solid var(--goldenyellow);
-            padding-bottom: rem(21);
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 0;
+            height: 100%;
+            border-bottom: 2pxsolid#000;
+            transition: 0.2salllinear;
         }
-        &:active {
-            border-bottom: rem(2) solid var(--goldenyellow);
-            padding-bottom: rem(21);
-        }
+        // &:hover::before {
+        //     // border-bottom: rem(2) solid var(--goldenyellow);
+        //     // padding-bottom: rem(21);
+        //     width: 100%;
+        //     left: 0;
+        // }
+
+        // &:hover &::before {
+        //     left: 0;
+        // }
+        // &:active {
+        //     border-bottom: rem(2) solid var(--goldenyellow);
+        //     padding-bottom: rem(21);
+        // }
     }
 }

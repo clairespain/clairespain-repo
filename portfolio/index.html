@@ -1,57 +1,147 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UX Design and Web Dev portfolio for Claire Spain">
+    <meta name="keywords" content="web developer, ux, design, Claire, Spain, portfolio">
+    <meta name="author" content="Claire Spain">
     <link rel="stylesheet" href="https://use.typekit.net/snz7tuc.css">
-    <link rel="stylesheet" href="/dist/style.css"/>
+    <link rel="stylesheet" href="/dist/style.css" />
     <script defer src="/dist/script.js"></script>
-    
     <title>Claire Spain's Portfolio</title>
 </head>
+
 <body>
     <!-- Hey what's up? I'm using SCSS to build this website. -->
     <header class="header container">
-        <div class="header__title">
-            <h3>Claire Spain's Portfolio</h3>
+        <div class="header__title" aria-labelledby="website title home logo">
+            <!-- Bring users back to landing page/back to top -->
+            <a href="#">
+                <h3>Claire Spain's Portfolio</h3>
+            </a>
         </div>
 
         <div class="header header__navigation">
             <nav>
-                <a href="">Work/Case Studies</a>
-                <a href="">Experience</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
+                <ul>
+                    <li><a href="#">Work/Case Studies</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="landing">
+        <section aria-labelledby="landing-section" class="landing">
             <div>
                 <h1>Claire Spain</h1>
             </div>
-            
-            <div>
+
+            <div class="mini-me">
                 <span class="landing__circle-bg"></span>
                 <img src="../images/portrait_transparent.png" alt="Drawing of Claire">
             </div>
             <div>
                 <p>Hi there! I'm Claire!
-                    I'm a creative UX Designer 
+                    I'm a creative UX Designer
                     and Web Developer.</p>
             </div>
+            <p>My goal is to design with Accessibility in mind.</p>
+            <!-- pen logo hover shakes the pen tells users that they can click it to go to ext site -->
+            <!-- <img src=""> -->
         </section>
-        <section>
+        <section aria-labelledby="work-and-case-studies-section">
             <h2>Works/Case Studies</h2>
+            <ul>
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+                <li>Project 4</li>
+                <li>Project 5</li>
+                <li>Project 6</li>
+            </ul>
         </section>
-        <section>
-            <h2>My Experience</h2>
-            <h2>About Me</h2>
+        <section aria-labelledby="experience-and-about-section">
+            <article>
+                <h2>My Experience</h2>
+                <p>
+                    Education:
+                    <br />
+                    <br />
+                    BFA in Media Arts with a Concentration in Programming from the University of Montana
+                    <br />
+                    Google UX Certification
+                    <br />
+                    Calarts UI/UX Certification
+                    <br />
+                    <br />
+                    Work:
+                    <br />
+                    <br />
+                    Hughes and Cassens, LLC
+                    <br />
+                    Web Developer
+                    <br />
+                    <br />
+                    Montana Repertory Theatre
+                    <br />
+                    App/Web Designer/Developer
+                    <br />
+                    <br />
+                    Griztech
+                    <br />
+                    Supervising IT Technician
+
+                </p>
+                <img src="">
+            </article>
+
+            <article>
+                <h2>About Me</h2>
+                <p> Hi there, my name is Claire.
+                    <br />
+                    I was born in the Philippines, but mostly grew up in Montana and Arizona.
+                    I'm currently residing in Austin, Texas.
+                    <br />
+                    I am a creative at heart and strive to bring art into everything I do;
+                    however, designing for Accessibility is my top priority.
+                    <br />
+                    For me everyday is a learning opportunity, while this website
+                    is reserved for my UX and Dev Portfolio work, I have another website that I treat as
+                    my small corner of the internet.
+                    <br />
+                    There I keep all sort of knit-knacks about art, art history, designing, web dev, etc.
+                    <br />
+                    I also have two sassy kittens named Mars and Twix (yes like the candy bars.)
+                </p>
+                <img src="">
+            </article>
         </section>
-        <section>
+        <section aria-labelledby="contact-section">
             <h2>Want to get in Touch?</h2>
+            <h2>Drop me a line!</h2>
+            <form>
+                <label>Name:</label>
+                <input type="text">
+                <label>Email:</label>
+                <input type="email">
+                <lavel>Subject:</lavel>
+                <input type="text">
+                <label>Message:</label>
+                <textarea></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            <img src="../images/Caspian.png" alt="Plant Caspian">
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <!-- social media icons here -->
+        <p>Made with 💖 by Claire Spain</p>
+        <p>Copyright &copy; 2021</p>
+    </footer>
 </body>
+
 </html>
