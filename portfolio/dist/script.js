@@ -1,2 +1,2 @@
-"use strict";console.log("hello there, general kenobi");
+"use strict";var btnHamburger=document.querySelector("#btnHamburger"),header=document.querySelector(".header");btnHamburger.addEventListener("click",(function(){header.classList.contains("open")?header.classList.remove("open"):header.classList.add("open")}));
 //# sourceMappingURL=script.js.map

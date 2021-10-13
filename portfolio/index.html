@@ -16,22 +16,39 @@
 <body>
     <!-- Hey what's up? I'm using SCSS to build this website. -->
     <header class="header container">
-        <div class="header__title" aria-labelledby="website title home logo">
-            <!-- Bring users back to landing page/back to top -->
-            <a href="#">
+        <div class="overlay"></div>
+        <div class="header header__title" aria-label="website title home logo">
+            <a href="#Landing">
                 <h3>Claire Spain's Portfolio</h3>
             </a>
         </div>
-
         <div class="header header__navigation">
-            <nav>
-                <ul>
-                    <li><a href="#">Work/Case Studies</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <nav class="myNav">
+
+                <div class="hide-for-mobile">
+                    <ul>
+                        <li><a class="underline-effect" href="#Work">Work/Case Studies</a></li>
+                        <li><a class="underline-effect" href="#Experience">Experience</a></li>
+                        <li><a class="underline-effect" href="#Home">About</a></li>
+                        <li><a class="underline-effect" href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
             </nav>
+
+            <!-- <div class="header__menu has-fade">
+                <a href="">Work/Case Studies</a>
+                <a href="">Experience</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div> -->
+
         </div>
     </header>
     <main>
